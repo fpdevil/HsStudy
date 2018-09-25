@@ -2,7 +2,7 @@
 --
 -- see: https://github.com/sol/hpack
 --
--- hash: f71fafe453fd33d919e05045132ecbc3f6f5da7cbcde5b98bde8e9e5eb1617fd
+-- hash: 54c79fc062f775010d5a322e06ecfabc8fa7584254051a1607f5ab4547a5e29f
 
 name:           HsStudy
 version:        0.1.0.0
@@ -27,6 +27,15 @@ source-repository head
 library
   exposed-modules:
       HsStudy1
+      HsStudy10
+      HsStudy11
+      HsStudy12
+      HsStudy13
+      HsStudy14
+      HsStudy15
+      HsStudy16
+      HsStudy17
+      HsStudy18
       HsStudy2
       HsStudy3
       HsStudy4
@@ -63,6 +72,7 @@ executable HsStudy-exe
     , directory
     , filepath
     , mtl >=2.2.1
+    , random
     , unix
   default-language: Haskell2010
 
@@ -83,4 +93,6 @@ test-suite HsStudy-test
     , hspec
     , hspec-discover
     , mtl >=2.2.1
+    , random
+    , unix
   default-language: Haskell2010

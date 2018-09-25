@@ -3,7 +3,7 @@
 -- Module         : HsStudy6
 -- Copyright      :  (c) Some description... 2018
 --
--- License        : BSD
+-- License        : MIT
 -- Author         : Sampath Singamsetty
 -- Maintainer     : Singamsetty.Sampath@gmail.com
 -- Description    :
@@ -12,7 +12,9 @@
 
 module HsStudy6
        (
-         positions
+         canonize
+       , unique
+       , positions
        , apply
        , ops
        , choices
@@ -35,6 +37,19 @@ module HsStudy6
 
 import System.Environment (getArgs)
 
+
+-- canonize into a list of integers, where each distinct value gets
+-- the next highest number, if vals0 = ['d', 'b', 'd', 'd', 'a']
+-- then canonize vals0 = [0, 1, 0, 0, 2]
+canonize :: (Eq a, Num b, Enum b) => [a] -> [b]
+canonize [] = []
+canonize [_] = [0]
+canonize vals = map head [[n | (x, n) <- ranks, x == y] | y <- vals]
+  where
+    ranks = unique vals `zip` [0 ..]
+
+unique :: (Eq a) => [a] -> [a]
+unique xs = [x | (x, y) <- zip xs [0 ..], x `notElem` take y xs]
 
 -- function to return all positions of a value in a list
 positions :: (Eq a) => a -> [a] -> [Int]
