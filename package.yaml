@@ -25,6 +25,7 @@ dependencies:
 - directory
 - filepath
 - random
+- unix
 
 library:
   source-dirs: src
