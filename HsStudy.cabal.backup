@@ -1,0 +1,86 @@
+-- This file has been generated from package.yaml by hpack version 0.28.2.
+--
+-- see: https://github.com/sol/hpack
+--
+-- hash: f71fafe453fd33d919e05045132ecbc3f6f5da7cbcde5b98bde8e9e5eb1617fd
+
+name:           HsStudy
+version:        0.1.0.0
+description:    Please see the README on Github at <https://github.com/fpdevil/HsStudy#readme>
+homepage:       https://github.com/fpdevil/HsStudy#readme
+bug-reports:    https://github.com/fpdevil/HsStudy/issues
+author:         Sampath Singamsetty
+maintainer:     singamsetty.sampath@gmail.com
+copyright:      BSD
+license:        BSD3
+license-file:   LICENSE
+build-type:     Simple
+cabal-version:  >= 1.10
+extra-source-files:
+    ChangeLog.md
+    README.md
+
+source-repository head
+  type: git
+  location: https://github.com/fpdevil/HsStudy
+
+library
+  exposed-modules:
+      HsStudy1
+      HsStudy2
+      HsStudy3
+      HsStudy4
+      HsStudy5
+      HsStudy6
+      HsStudy7
+      HsStudy8
+      HsStudy9
+      Lib
+      Sort3
+  other-modules:
+      Paths_HsStudy
+  hs-source-dirs:
+      src
+  build-depends:
+      base >=4.7 && <5
+    , directory
+    , filepath
+    , mtl >=2.2.1
+    , random
+    , unix
+  default-language: Haskell2010
+
+executable HsStudy-exe
+  main-is: Main.hs
+  other-modules:
+      Paths_HsStudy
+  hs-source-dirs:
+      app
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      HsStudy
+    , base >=4.7 && <5
+    , directory
+    , filepath
+    , mtl >=2.2.1
+    , unix
+  default-language: Haskell2010
+
+test-suite HsStudy-test
+  type: exitcode-stdio-1.0
+  main-is: Spec.hs
+  other-modules:
+      Sort3Spec
+      Paths_HsStudy
+  hs-source-dirs:
+      test
+  ghc-options: -threaded -rtsopts -with-rtsopts=-N
+  build-depends:
+      HsStudy
+    , base >=4.7 && <5
+    , directory
+    , filepath
+    , hspec
+    , hspec-discover
+    , mtl >=2.2.1
+  default-language: Haskell2010
