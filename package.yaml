@@ -1,10 +1,10 @@
 name:                HsStudy
 version:             0.1.0.0
 github:              "fpdevil/HsStudy"
-license:             BSD3
+license:             MIT
 author:              "Sampath Singamsetty"
 maintainer:          "singamsetty.sampath@gmail.com"
-copyright:           "BSD"
+copyright:           "MIT"
 
 extra-source-files:
 - README.md

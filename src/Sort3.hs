@@ -3,7 +3,7 @@
 -- Module         : Sort3
 -- Copyright      :  (c) Some description... 2018
 --
--- License        : BSD
+-- License        : MIT
 -- Author         : Sampath Singamsetty
 -- Maintainer     : Singamsetty.Sampath@gmail.com
 -- Description    :

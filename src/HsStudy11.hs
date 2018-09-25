@@ -2,7 +2,7 @@
 -- |
 -- Module      :  HsStudy11
 -- Copyright   :
--- License     :
+-- License     :  MIT
 --
 -- Author      :  Sampath Singamsetty
 -- Maintainer  :

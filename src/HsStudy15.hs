@@ -2,7 +2,7 @@
 -- |
 -- Module      :  HsStudy15
 -- Copyright   :
--- License     :
+-- License     :  MIT
 --
 -- Author      :  Sampath Singamsetty
 -- Maintainer  :

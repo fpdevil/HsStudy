@@ -11,8 +11,8 @@ homepage:       https://github.com/fpdevil/HsStudy#readme
 bug-reports:    https://github.com/fpdevil/HsStudy/issues
 author:         Sampath Singamsetty
 maintainer:     singamsetty.sampath@gmail.com
-copyright:      BSD
-license:        BSD3
+copyright:      MIT 
+license:        MIT 
 license-file:   LICENSE
 build-type:     Simple
 cabal-version:  >= 1.10
